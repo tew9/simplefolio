@@ -1,10 +1,10 @@
 {
-  "name": "simplefolio",
+  "name": "tangoprofolio",
   "version": "1.0.0",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "start": "webpack --config webpack.prod.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
