@@ -9,4 +9,4 @@ RUN npm run build
 
 #Stage 2, Run 
 FROM nginx:stable-alpine
-COPY --from=build /user/usr/app/dist/simplefolio /usr/share/nginx/html
+COPY --from=build /user/usr/app/dist/ /usr/share/nginx/html
