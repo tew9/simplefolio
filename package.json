@@ -1,11 +1,12 @@
 {
-  "name": "simplefolio",
+  "name": "tangoprofolio",
   "version": "1.0.0",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "main": "index.js",
   "scripts": {
     "heroku-prebuild": "npm install --dev",
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "heroku-postbuild": "webpack --config webpack.prod.js",
+    "start": "webpack --config webpack.prod.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
@@ -13,8 +14,8 @@
     "url": "git+https://github.com/cobidev/simplefolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
+  "author": "Tango Tew",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
